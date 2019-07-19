@@ -1,0 +1,27 @@
+\documentclass[UTF8,12pt]{ctexart}
+\usepackage{cite}
+\usepackage[hmargin=1in,vmargin=1in]{geometry}
+
+\usepackage[colorlinks, 
+            linkcolor=blue,
+            citecolor=blue]{hyperref}
+
+\title{title} 
+\author{樊友平} 
+\date{\today}
+
+\begin{document}
+    \maketitle
+    \pagestyle{plain}
+    \tableofcontents
+    \thispagestyle{empty}
+
+    \newpage
+    \setcounter{page}{1}
+    \section{chapter}
+
+    \newpage
+    \addcontentsline{toc}{section}{参考文献}
+    \bibliographystyle{plain}
+    \bibliography{reference}
+\end{document}
